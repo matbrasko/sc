@@ -1,0 +1,64 @@
+:root {
+  --secondary: #688aff;
+  --blue: #688aff;
+  --third: #e43e43;
+  --red: #e43e43;
+  --forth: #ff9600;
+  --yellow: #ff9600;
+  --lightgray: #f1f4ff;
+  --white: #ffffff;
+  --black: #000;
+}
+
+$colors: 'red', 'yellow', 'blue', 'lightgray', 'black', 'white';
+
+@each $color in $colors {
+  .#{$color} {
+    color: var(--#{$color});
+  }
+  .bg-#{$color} {
+    background-color: var(--#{$color});
+  }
+  .shadow-#{$color} {
+    text-shadow: 6px 6px var(--#{$color});
+  }
+}
+
+/*texts */
+.bg-black {
+  color: white;
+}
+.bg-ligtgray,
+.bg-white {
+  color: black;
+}
+
+/*lightgray */
+.filter-lightgray {
+  filter: brightness(100%) invert(87%) sepia(15%) saturate(123%)
+    hue-rotate(192deg) brightness(104%) contrast(106%);
+}
+
+/* different options */
+/*blue */
+.filter-blue {
+  filter: brightness(100%) invert(50%) sepia(35%) saturate(1744%)
+    hue-rotate(202deg) brightness(100%) contrast(108%);
+}
+
+/*red */
+.filter-red {
+  filter: brightness(100%) invert(26%) sepia(89%) saturate(1191%)
+    hue-rotate(328deg) brightness(112%) contrast(98%);
+}
+
+/*yellow */
+.filter-yellow {
+  filter: brightness(100%) invert(53%) sepia(72%) saturate(807%)
+    hue-rotate(359deg) brightness(101%) contrast(106%);
+}
+
+/*white */
+.filter-white {
+  filter: brightness(100%) invert(1);
+}

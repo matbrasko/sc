@@ -1,0 +1,27 @@
+.evtypes .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.evtypes-bg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  width: 440px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.evtypes .left,
+.evtypes .right {
+  max-width: 440px;
+}

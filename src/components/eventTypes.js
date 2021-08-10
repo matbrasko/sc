@@ -1,0 +1,27 @@
+import React from 'react';
+import Event from './event';
+
+import { Link } from 'react-router-dom';
+import { slugify } from '../utils/slugify';
+
+const EventTypes = ({ name, description, isEven, color }) => {
+  const slug = slugify(name);
+  return (
+    <div className={`flex ${isEven ? 'reversed' : 'null'}`}>
+      <Link to={`/${slug}`}>
+        <Event type={name} color={color} nameClass='type-event'>
+          <h2 className={color}>{name}</h2>
+        </Event>
+      </Link>
+
+      <div className={isEven ? 'left' : 'right'}>
+        <h3>{name}</h3>
+        <p>{description}</p>
+        <Link to={`/${slug}`}>
+          <button>see upcoming events</button>{' '}
+        </Link>
+      </div>
+    </div>
+  );
+};
+export default EventTypes;

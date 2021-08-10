@@ -1,0 +1,18 @@
+footer {
+  .fa {
+    height: 30px;
+    margin-right: 12px;
+    font-size: 24px !important;
+  }
+  p {
+    font-size: 16px;
+  }
+  h4 {
+    color: var(--blue);
+  }
+}
+
+a i:hover {
+  color: var(--yellow);
+  transition-duration: 350ms;
+}

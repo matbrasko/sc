@@ -1,0 +1,73 @@
+[
+  {
+    "date": "2021-07-15",
+    "location": "Frontløberne",
+    "name": "Mushroom picking and philosophy talk with Kierkegaard",
+    "type": "Political Meetings",
+    "description": "du kan få sparring på hovedkvarteret, vi laver kulturprojekter i byen og"
+  },
+  {
+    "date": "2021-09-11",
+    "location": "Frontløberne",
+    "name": "Hjemelavet frikadeller med Anders Fogh",
+    "type": "Policy Lab",
+    "description": "du kan få sparring på hovedkvarteret, vi laver kulturprojekter i byen og",
+    "quotes": [
+      "I love people. ",
+      "When we got into office, we were happy",
+      "Trees are good."
+    ]
+  },
+  {
+    "date": "2021-08-12",
+    "location": "Frontløberne",
+    "name": "Mette and me",
+    "type": "Cultural Events",
+    "description": "du kan få sparring på hovedkvarteret, vi laver kulturprojekter i byen og"
+  },
+  {
+    "date": "2021-08-15",
+    "location": "Frontløberne",
+    "name": "Mushroom picking and philosophy talk with Kierkegaard",
+    "type": "Political Meetings",
+    "description": "du kan få sparring på hovedkvarteret, vi laver kulturprojekter i byen og",
+    "quotes": ["I like breakfast", "My dog is smart"]
+  },
+  {
+    "date": "2021-08-31",
+    "location": "Frontløberne",
+    "name": "Hide and seek with the queen of denmark",
+    "type": "Podcasts",
+    "description": "du kan få sparring på hovedkvarteret, vi laver kulturprojekter i byen og"
+  },
+  {
+    "date": "2021-09-11",
+    "location": "Frontløberne",
+    "name": "Fortune telling workshop with Lars Lykke",
+    "type": "Policy Lab",
+    "description": "du kan få sparring på hovedkvarteret, vi laver kulturprojekter i byen og"
+  },
+  {
+    "date": "2021-09-11",
+    "location": "Frontløberne",
+    "name": "Vigo Mortensen: Why I started growing my veggies",
+    "type": "Podcasts",
+    "description": "du kan få sparring på hovedkvarteret, vi laver kulturprojekter i byen og"
+  },
+  {
+    "date": "2021-21-06",
+    "location": "UKH",
+    "name": "PUBLIC HEARINGS AND CITY DEVELOPMENT",
+    "type": "Political Meetings",
+    "text": "Aarhus Kommune is at the moment developing several areas of the city - e.g. Aarhus Ø, Aarhus K, Sydhavnen, not to mention Amtssygehuset. On June 21, approaching a public hearing for the development plan of Amtssygehuset, a host of young inhabitans connected to Amtssygehuset met to discuss the development of the area.",
+    "description": "Aarhus Kommune is at the moment developing several areas of the city - e.g. Aarhus Ø, Aarhus K, Sydhavnen, not to mention Amtssygehuset. "
+  },
+  {
+    "date": "2021-08-11",
+    "location": "Frontløberne",
+    "name": "Flukhx",
+    "type": "Cultural Events",
+    "description": "du kan få sparring på hovedkvarteret, vi laver kulturprojekter i byen og",
+    "quotes": ["I love cabbage. ", "I love kale. "]
+  }
+]

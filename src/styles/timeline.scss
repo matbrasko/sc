@@ -1,0 +1,126 @@
+.timeline {
+  padding: 0 40px;
+  .container-wide {
+    margin: 0 auto;
+  }
+  &.bg-white {
+    background-image: url(../images/bg3b.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+.movedup {
+  margin-top: -80px !important;
+}
+.timeline-container {
+  width: 49%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+/* line */
+.timeline-line {
+  width: 180px;
+  background-image: url(../images/steps2.png);
+  background-size: 100% auto;
+  background-position: top;
+  &.inverted {
+    filter: invert(1);
+  }
+}
+
+.timeline-text {
+  padding: 0 32px;
+  text-align: center;
+  z-index: 3;
+}
+
+/* timeline events */
+.podcasts,
+.policy-lab,
+.political-meetings,
+.cultural-events {
+  transition-duration: 350ms;
+}
+
+.policy-lab {
+  &.inside {
+    background-color: var(--blue);
+    &:hover {
+      background-color: var(--red);
+    }
+  }
+  h5 {
+    color: white;
+  }
+  h3 {
+    color: white;
+  }
+}
+
+.political-meetings {
+  &.inside {
+    background-color: var(--yellow);
+    &:hover {
+      background-color: white;
+    }
+  }
+  h5 {
+    color: var(--red);
+  }
+  h3 {
+    color: black;
+  }
+}
+.political-meetings button {
+  @extend .btn-red;
+}
+.cultural-events button:hover {
+  @extend .btn-red;
+}
+
+.cultural-events {
+  &.inside {
+    background-color: var(--red);
+    &:hover {
+      background-color: var(--yellow);
+    }
+  }
+  h5 {
+    color: var(--blue);
+  }
+  h3 {
+    color: white;
+  }
+}
+
+.podcasts {
+  &.inside {
+    background-color: white;
+    &:hover {
+      background-color: var(--blue);
+    }
+  }
+  h5 {
+    color: var(--blue);
+  }
+  h3 {
+    color: black;
+  }
+  &.h4 {
+    color: var(--blue);
+  }
+  &:hover h3 {
+    color: white;
+  }
+}
+
+.inside {
+  background-color: white;
+  &:hover {
+    background-color: var(--blue);
+  }
+}
