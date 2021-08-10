@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/sc/static/css/main.e69dce80.chunk.css",
+    "main.js": "/sc/static/js/main.54010c55.chunk.js",
+    "main.js.map": "/sc/static/js/main.54010c55.chunk.js.map",
+    "runtime-main.js": "/sc/static/js/runtime-main.7f792ee0.js",
+    "runtime-main.js.map": "/sc/static/js/runtime-main.7f792ee0.js.map",
+    "static/js/2.3ac615d1.chunk.js": "/sc/static/js/2.3ac615d1.chunk.js",
+    "static/js/2.3ac615d1.chunk.js.map": "/sc/static/js/2.3ac615d1.chunk.js.map",
+    "static/js/3.9996ff1a.chunk.js": "/sc/static/js/3.9996ff1a.chunk.js",
+    "static/js/3.9996ff1a.chunk.js.map": "/sc/static/js/3.9996ff1a.chunk.js.map",
+    "static/js/4.19879df5.chunk.js": "/sc/static/js/4.19879df5.chunk.js",
+    "static/js/4.19879df5.chunk.js.map": "/sc/static/js/4.19879df5.chunk.js.map",
+    "index.html": "/sc/index.html",
+    "static/css/main.e69dce80.chunk.css.map": "/sc/static/css/main.e69dce80.chunk.css.map",
+    "static/js/2.3ac615d1.chunk.js.LICENSE.txt": "/sc/static/js/2.3ac615d1.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/sc/static/media/steps2.12b3d5b5.png",
+    "static/media/flukhx.md": "/sc/static/media/flukhx.31c804d6.md",
+    "static/media/public-hearings-and-city-development.md": "/sc/static/media/public-hearings-and-city-development.43740c64.md"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f792ee0.js",
+    "static/js/2.3ac615d1.chunk.js",
+    "static/css/main.e69dce80.chunk.css",
+    "static/js/main.54010c55.chunk.js"
+  ]
+}
