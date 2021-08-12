@@ -13,7 +13,7 @@ const MegaMenu = () => {
               <Link to={slugify(item.title)}>
                 <div className='box'>
                   <img
-                    src={`/images/${slugify(item.title)}.png`}
+                    src={`/sc/images/${slugify(item.title)}.png`}
                     alt={item.title}
                   />
                   <h5>{item.title}</h5>
