@@ -1,7 +1,7 @@
 import React from 'react';
 import postlist from '../posts.json';
 import { slugify } from '../utils/slugify';
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter } from 'react-router-dom';
 
 const MegaMenu = () => {
   return (
@@ -9,16 +9,18 @@ const MegaMenu = () => {
       <div className='flex box-container'>
         {postlist.map((item) =>
           item.menu ? (
-            <Link to={slugify(item.title)}>
-              <div className='box'>
-                <img
-                  src={`/coding/images/${slugify(item.title)}.png`}
-                  alt={item.title}
-                />
-                <h5>{item.title}</h5>
-                <p>{item.description}</p>
-              </div>
-            </Link>
+            <BrowserRouter basename='/sc'>
+              <Link to={slugify(item.title)}>
+                <div className='box'>
+                  <img
+                    src={`/images/${slugify(item.title)}.png`}
+                    alt={item.title}
+                  />
+                  <h5>{item.title}</h5>
+                  <p>{item.description}</p>
+                </div>
+              </Link>
+            </BrowserRouter>
           ) : null
         )}
       </div>

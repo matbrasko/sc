@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div class='menu flex desktop bg-black'>
       <Link to='/'>
-        <img src={`../images/sweetcity_logo.png`} alt='sweet city logo' />
+        <img src={`../sc/images/sweetcity_logo.png`} alt='sweet city logo' />
         <h4 className='second logo'>Sweet City</h4>
       </Link>
       {eventTypes.map((item, index) => (

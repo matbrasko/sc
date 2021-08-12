@@ -15,7 +15,7 @@ function App() {
   events.sort((a, b) => (a.date > b.date ? 1 : -1));
 
   return (
-    <Router>
+    <Router basename='/sc'>
       <Header />
       <Switch>
         <Route path='/' component={Home} exact />
