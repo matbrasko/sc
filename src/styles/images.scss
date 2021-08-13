@@ -24,3 +24,7 @@ img {
   width: 100%;
   transition-duration: 350ms;
 }
+
+.inverted {
+  filter: invert(1);
+}

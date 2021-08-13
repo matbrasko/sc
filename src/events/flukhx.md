@@ -1,4 +1,4 @@
-# 8 HOURS OF LIVING CULTURE 🌱
+## 8 HOURS OF LIVING CULTURE
 
 _by Frontløberne, UKH and Institut for (X) feat. VVE_
 

@@ -12,10 +12,11 @@ import { slugify } from './utils/slugify';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
+  const staticPath = '/sc';
   events.sort((a, b) => (a.date > b.date ? 1 : -1));
 
   return (
-    <Router basename='/sc'>
+    <Router basename={staticPath}>
       <Header />
       <Switch>
         <Route path='/' component={Home} exact />
@@ -25,7 +26,7 @@ function App() {
         ))}
         <Route path='/:category/:name' component={EventLayout} />
       </Switch>
-      <Footer />
+      <Footer staticPath={staticPath} />
     </Router>
   );
 }

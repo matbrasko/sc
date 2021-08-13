@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Image from '../components/image';
 import EventTypes from '../components/eventTypes';
 import Timeline from '../components/timeline';
 import Quotes from '../components/quotes';
@@ -23,9 +24,10 @@ const Home = () => {
           <h2 className='blue vertical'>11.8.</h2>
           <h1>Sweet City 2021</h1>
           <p>Only by engaging, you can make a change!</p>
-          <img src='./images/sweetcity_logo.png' className='logo' alt='logo' />
+
+          <Image path='/sweetcity_logo.png' nameClass='logo' />
           <div className='boom'>
-            <img src='./images/boom.png' alt='boom illustration' />
+            <Image path='/boom.png' />
             <h3>mm so yummy!</h3>
           </div>
         </div>
@@ -63,7 +65,7 @@ const Home = () => {
         <div className='container-wide center'>
           {eventTypes.map((type, index) => (
             <EventTypes
-              name={type.name}
+              type={type}
               description={type.short}
               isEven={index % 2 === 0}
               color='black'

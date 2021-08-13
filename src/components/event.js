@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import Image from '../components/image';
+
 import { slugify } from '../utils/slugify';
 
 const Event = ({ nameClass, color, type, children, slug }) => {
-  const image = `url(../sc/images/events/${slug}.jpg)`;
+  const staticPath = '/sc';
+  const image = `url(/..${staticPath}/images/events/${slug}.jpg)`;
   const [hovered, setHovered] = useState(false);
   return (
     <div
@@ -15,11 +18,7 @@ const Event = ({ nameClass, color, type, children, slug }) => {
         className={`inside ${slugify(type)}`}
         style={hovered ? inside(image) : null}
       >
-        <img
-          src={`/sc/images/${slugify(type)}.png`}
-          className={`filter-${color}`}
-          alt={slug}
-        />
+        <Image path={`/${slugify(type)}.png`} nameClass={`filter-${color}`} />
       </div>
     </div>
   );

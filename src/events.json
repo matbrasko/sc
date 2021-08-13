@@ -10,9 +10,9 @@
     "date": "2021-08-19",
     "location": "Frontløberne",
     "name": "Flukhx",
+    "codename": "Fl<span class='red'>ukh</span><span class='blue'>x</span>",
     "type": "Cultural Events",
-    "description": "On August 11th the three cultural platforms do a takeover at Avenue One in Ridehuset. The takeover will happen in two stages",
-    "quotes": ["I love cabbage. ", "I love kale. ", "My dog is smart."]
+    "description": "8 HOURS OF LIVING CULTURE"
   },
   {
     "date": "2021-07-15",
@@ -28,9 +28,8 @@
     "type": "Policy Lab",
     "description": "du kan få sparring på hovedkvarteret, vi laver kulturprojekter i byen og",
     "quotes": [
-      "I love people. ",
-      "When we got into office, we were happy",
-      "Trees are good."
+      "Sweet City is a project that runs from August to the local election in November 2021. Throughout this period, up to 20 events/meetings/podcasts will take place in and around Aarhus. This website gathers information and activities of the project - and will be updated continuously.",
+      "Through participatory lab sessions, we explore different sorts democratic action that by-passes electoral politics"
     ]
   },
   {
@@ -46,7 +45,7 @@
     "name": "Mushroom picking and philosophy talk with Kierkegaard",
     "type": "Political Meetings",
     "description": "du kan få sparring på hovedkvarteret, vi laver kulturprojekter i byen og",
-    "quotes": ["I like breakfast", "My dog is smart"]
+    "quotes": ["My dog is smart"]
   },
   {
     "date": "2021-08-31",
@@ -81,8 +80,8 @@
     "date": "2021-08-11",
     "location": "Frontløberne",
     "name": "Flukhx",
+    "codename": "Fl<span class='red'>ukh</span><span class='blue'>x</span>",
     "type": "Cultural Events",
-    "description": "du kan få sparring på hovedkvarteret, vi laver kulturprojekter i byen og",
-    "quotes": ["I love cabbage. ", "I love kale. "]
+    "description": "8 HOURS OF LIVING CULTURE"
   }
 ]

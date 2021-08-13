@@ -48,13 +48,16 @@ const EventLayout = ({ match }) => {
             <div className='left'>
               <h4 style={{ marginBottom: -20 }}>{event.date}</h4>
               <h4 style={{ marginBottom: -8 }}>{event.location}</h4>
-              <h1
-                style={namelength > 24 ? { fontSize: 60 } : { fontSize: 90 }}
-                className={`shadow-${color2}`}
-              >
-                {event.name}
-              </h1>
+              {event.codename ? null : (
+                <h1
+                  style={namelength > 24 ? { fontSize: 60 } : { fontSize: 90 }}
+                  className={`shadow-${color2}`}
+                >
+                  {event.name}
+                </h1>
+              )}
 
+              <h1 dangerouslySetInnerHTML={{ __html: event.codename }}></h1>
               <p>{event.description}</p>
             </div>
             <Event type={type} color='black' nameClass='type-event' />

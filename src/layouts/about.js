@@ -9,23 +9,29 @@ const Home = () => {
   );
   return (
     <>
+      <section className='bg-black evtypes'>
+        <div className='container-wide center'>
+          <div className='flex'>
+            <div>
+              <img
+                src='/../sc/images/sweetcity_logo.png'
+                style={{ maxWidth: 320 }}
+              />
+            </div>
+            <div className='right'>
+              <h1>About this project</h1>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className='bg-lightgray'>
         <div className='container'>
-          <h2 className='blue'>About this project</h2>
-
-          <p>
-            Sweet City is a project that runs from August to the local election
-            in November 2021. Throughout this period, up to 20
-            events/meetings/podcasts will take place in and around Aarhus. This
-            website gathers information and activities of the project – and will
-            be updated continuously.
-          </p>
-          <p>
+          <h2>
             <i>
               After more than a year of political state of emergency, it is time
               to reflect and to dream.
             </i>
-          </p>
+          </h2>
           <p>
             Approaching the local elections in November 2021, Sweet City is a
             project that facilitates dialogue and amplifies the dreams and

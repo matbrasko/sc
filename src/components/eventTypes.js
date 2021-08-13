@@ -4,21 +4,21 @@ import Event from './event';
 import { Link } from 'react-router-dom';
 import { slugify } from '../utils/slugify';
 
-const EventTypes = ({ name, description, isEven, color }) => {
-  const slug = slugify(name);
+const EventTypes = ({ type, description, isEven, color }) => {
+  const slug = slugify(type.name);
   return (
     <div className={`flex ${isEven ? 'reversed' : 'null'}`}>
       <Link to={`/${slug}`}>
-        <Event type={name} color={color} nameClass='type-event'>
-          <h2 className={color}>{name}</h2>
+        <Event type={type.name} color={color} nameClass='type-event'>
+          <h2 className={color}>{type.name}</h2>
         </Event>
       </Link>
 
       <div className={isEven ? 'left' : 'right'}>
-        <h3>{name}</h3>
+        <h3>{type.name}</h3>
         <p>{description}</p>
         <Link to={`/${slug}`}>
-          <button>see upcoming events</button>{' '}
+          <button className={`btn-${type.color2}`}> upcoming events</button>{' '}
         </Link>
       </div>
     </div>

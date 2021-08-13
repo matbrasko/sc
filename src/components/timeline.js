@@ -3,7 +3,6 @@ import TimelineSection from './timelineSection';
 import { getCurrentDate } from '../utils/date';
 
 const Timeline = ({ events }) => {
-  console.log(events);
   var upcoming = [];
   var passed = [];
   var reversed = false;
@@ -14,8 +13,7 @@ const Timeline = ({ events }) => {
   if (upcoming.length % 2 !== 0) {
     reversed = true;
   }
-  console.log(upcoming.length);
-  console.log(reversed);
+
   return (
     <div
       style={{ paddingTop: 80 }}

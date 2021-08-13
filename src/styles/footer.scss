@@ -10,6 +10,17 @@ footer {
   h4 {
     color: var(--blue);
   }
+  img {
+    width: calc(32% - 24px);
+    object-fit: contain;
+    padding: 12px;
+    &.medium {
+      width: calc(36% - 24px);
+    }
+    &.large {
+      width: calc(40% - 24px);
+    }
+  }
 }
 
 a i:hover {
