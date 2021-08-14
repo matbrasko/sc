@@ -9,14 +9,13 @@ import eventTypes from './event-types.json';
 import events from './events.json';
 
 import { slugify } from './utils/slugify';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 function App() {
-  const staticPath = '/sc/';
   events.sort((a, b) => (a.date > b.date ? 1 : -1));
 
   return (
-    <BrowserRouter basename={staticPath}>
+    <>
       <Header />
       <Switch>
         <Route path='/' component={Home} exact />
@@ -26,8 +25,8 @@ function App() {
         ))}
         <Route path='/:category/:name' component={EventLayout} />
       </Switch>
-      <Footer staticPath={staticPath} />
-    </BrowserRouter>
+      <Footer />
+    </>
   );
 }
 export default App;
