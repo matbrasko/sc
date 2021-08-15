@@ -14,7 +14,7 @@ const Home = () => {
           <div className='flex'>
             <div>
               <img
-                src='/../sc/images/sweetcity_logo.png'
+                src='/../images/sweetcity_logo.png'
                 style={{ maxWidth: 320 }}
               />
             </div>

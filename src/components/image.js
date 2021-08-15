@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Image = ({ nameClass, path }) => {
-  const staticPath = '/sc';
+  const staticPath = '';
   return (
     <img
       src={`/..${staticPath}/images${path}`}

@@ -42,7 +42,7 @@ const Quotes = ({ quotations, maxSlides }) => {
         <div class='flex-center center'>
           {quotations.map((quote, index) => (
             <img
-              src='/../sc/images/03.png'
+              src='/../images/03.png'
               alt='quote icon'
               key={index}
               onClick={() => setCurrentQuoteNumber(index)}
@@ -55,7 +55,7 @@ const Quotes = ({ quotations, maxSlides }) => {
 
         <div class='center flex-between'>
           <img
-            src='/../sc/images/left.png'
+            src='/../images/left.png'
             alt='arrow left'
             className='arrow'
             onClick={handleArrowClick}
@@ -68,7 +68,7 @@ const Quotes = ({ quotations, maxSlides }) => {
           </div>
 
           <img
-            src='/../sc/images/right.png'
+            src='/../images/right.png'
             alt='arrow right'
             className='arrow'
             onClick={handleRightArrowClick}

@@ -1,6 +1,6 @@
 {
   "name": "sweetcity",
-  "homepage": "http://www.sweetcity.dk/",
+  "homepage": "http://www.sweetcity.dk",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
