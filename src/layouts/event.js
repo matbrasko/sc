@@ -22,9 +22,7 @@ const EventLayout = ({ match }) => {
 
   const typeItem = eventTypes.filter((event) => event.name === type);
 
-  const color = typeItem[0].color;
   const color2 = typeItem[0].color2;
-  const color3 = typeItem[0].colorHover;
 
   const [eventText, setEventText] = useState('');
 

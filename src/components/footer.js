@@ -45,7 +45,7 @@ const Footer = () => {
           <h4>
             supported by <a>Tuborgfondet</a>
           </h4>
-          <Image path='/tf.png' nameClass='inverted large' />
+          <Image path='/tf1.png' nameClass='large' />
 
           <p>
             <a href='https://www.instagram.com/Clovek_v_tisni/' target='_blank'>
