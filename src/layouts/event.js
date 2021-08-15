@@ -3,7 +3,6 @@ import ReactMarkdown from 'react-markdown';
 
 import events from '../events.json';
 import eventTypes from '../event-types.json';
-import { slugify } from '../utils/slugify';
 
 import Quotes from '../components/quotes';
 import EventsInLine from '../components/eventsInLine';
@@ -14,8 +13,15 @@ const EventLayout = ({ match }) => {
   console.log(match);
   let title = match.params.name;
   console.log(title);
+  const slug = event.name
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
 
-  const item = events.filter((event) => title === slugify(event.name));
+  const item = events.filter((event) => title === slug);
   console.log('item', item);
   let event = item[0];
 
@@ -32,7 +38,7 @@ const EventLayout = ({ match }) => {
   const [eventText, setEventText] = useState('');
 
   useEffect(() => {
-    import(`../events/${slugify(event.name)}.md`)
+    import(`../events/${slug}.md`)
       .then((res) => {
         fetch(res.default)
           .then((res) => res.text())
