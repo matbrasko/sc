@@ -11,10 +11,15 @@ import Event from '../components/event';
 import MetaTags from '../components/metaTags';
 
 const EventLayout = ({ match }) => {
-  let title = match.url;
-  const item = events.filter((event) => title.includes(slugify(event.name)));
-  const event = item[0];
+  console.log(match);
+  let title = match.params.name;
+  console.log(title);
 
+  const item = events.filter((event) => title === slugify(event.name));
+  console.log('item', item);
+  let event = item[0];
+
+  console.log(event);
   const namelength = event.name.length;
 
   const type = event.type;
@@ -35,7 +40,9 @@ const EventLayout = ({ match }) => {
           .catch((err) => console.log(err));
       })
       .catch((err) => console.log(err));
-  });
+    console.log(match);
+    console.log(event);
+  }, []);
 
   return (
     <>
