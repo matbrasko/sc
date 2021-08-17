@@ -9,31 +9,20 @@ import EventsInLine from '../components/eventsInLine';
 import Event from '../components/event';
 import MetaTags from '../components/metaTags';
 
+import { slugify } from '../utils/slugify';
+
 const EventLayout = ({ match }) => {
-  console.log(match);
   let title = match.params.name;
-  console.log(title);
-  const slug = event.name
-    .toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace(/[^\w-]+/g, '')
-    .replace(/--+/g, '-')
-    .replace(/^-+/, '')
-    .replace(/-+$/, '');
+  const event = events.find((event) => slugify(event.name) === title);
 
-  const item = events.filter((event) => title === slug);
-  console.log('item', item);
-  let event = item[0];
+  const slug = slugify(event.name);
+  const nameLength = event.name.length;
 
-  console.log(event);
-  const namelength = event.name.length;
+  const eventType = event.type;
+  const sameType = events.filter((event) => event.type === eventType);
+  const type = eventTypes.find((type) => type.name === eventType);
 
-  const type = event.type;
-  const sameType = events.filter((item) => item.type === type);
-
-  const typeItem = eventTypes.filter((event) => event.name === type);
-
-  const color2 = typeItem[0].color2;
+  const color2 = type.color2;
 
   const [eventText, setEventText] = useState('');
 
@@ -61,7 +50,7 @@ const EventLayout = ({ match }) => {
               <h4 style={{ marginBottom: -8 }}>{event.location}</h4>
               {event.codename ? null : (
                 <h1
-                  style={namelength > 24 ? { fontSize: 60 } : { fontSize: 90 }}
+                  style={nameLength > 24 ? { fontSize: 60 } : { fontSize: 90 }}
                   className={`shadow-${color2}`}
                 >
                   {event.name}
@@ -71,7 +60,7 @@ const EventLayout = ({ match }) => {
               <h1 dangerouslySetInnerHTML={{ __html: event.codename }}></h1>
               <p>{event.description}</p>
             </div>
-            <Event type={type} color='black' nameClass='type-event' />
+            <Event type={eventType} color='black' nameClass='type-event' />
           </div>
         </div>
       </section>
@@ -85,7 +74,11 @@ const EventLayout = ({ match }) => {
       {'quotes' in event ? <Quotes quotations={event.quotes} /> : null}
 
       <EventsInLine color='black' title='Upcoming events' events={events} />
-      <EventsInLine color={color2} title={`other ${type}`} events={sameType} />
+      <EventsInLine
+        color={color2}
+        title={`other ${eventType}`}
+        events={sameType}
+      />
     </>
   );
 };

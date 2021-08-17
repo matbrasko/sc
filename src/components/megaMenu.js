@@ -1,27 +1,23 @@
 import React from 'react';
 import Image from './image';
-import postlist from '../posts.json';
+import eventTypes from '../event-types.json';
 import { slugify } from '../utils/slugify';
-import { Link, BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const MegaMenu = () => {
+const MegaMenu = ({ open, handleClick }) => {
   return (
-    <div className='container-wide'>
-      <div className='flex box-container'>
-        {postlist.map((item) =>
-          item.menu ? (
-            <BrowserRouter basename='/sc'>
-              <Link to={slugify(item.title)}>
-                <div className='box'>
-                  <Image path={`/${slugify(item.title)}.png`} />
-                  <h5>{item.title}</h5>
-                  <p>{item.description}</p>
-                </div>
-              </Link>
-            </BrowserRouter>
-          ) : null
-        )}
-      </div>
+    <div
+      className={`flex box-container megamenu bg-black ${!open && 'gone'}`}
+      onClick={handleClick}
+    >
+      {eventTypes.map((type) => (
+        <Link to={`/${slugify(type.name)}`}>
+          <div className='box'>
+            <h2>{type.name}</h2>
+            <p>{type.short}</p>
+          </div>
+        </Link>
+      ))}
     </div>
   );
 };

@@ -4,6 +4,7 @@ import Image from '../components/image';
 import EventTypes from '../components/eventTypes';
 import Timeline from '../components/timeline';
 import Quotes from '../components/quotes';
+import MetaTags from '../components/metaTags';
 
 import { Link } from 'react-router-dom';
 
@@ -18,6 +19,11 @@ const Home = () => {
   );
   return (
     <>
+      <MetaTags
+        name='Home'
+        description='Sweet City is a project that runs from August to the local election
+            in November 2021.'
+      />
       <section className='full bg-black flex intro'>
         <div className='intro-bg'></div>
         <div className='container'>

@@ -1,6 +1,17 @@
 .evtypes .flex {
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    & a {
+      align-self: flex-end;
+    }
+    & .left,
+    & .right {
+      align-self: flex-start;
+      text-align: left;
+    }
+  }
 }
 
 .evtypes-bg {

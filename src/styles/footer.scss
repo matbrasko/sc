@@ -10,9 +10,8 @@ footer {
   h4 {
     color: var(--blue);
   }
-  img {
+  .imagelink {
     width: calc(32% - 24px);
-    object-fit: contain;
     padding: 12px;
     &.medium {
       width: calc(36% - 24px);
@@ -20,6 +19,9 @@ footer {
     &.large {
       width: calc(40% - 24px);
     }
+  }
+  img {
+    object-fit: contain;
   }
 }
 

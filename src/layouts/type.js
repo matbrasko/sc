@@ -26,7 +26,7 @@ const Type = ({ match }) => {
               slug={slugify(type.name)}
             >
               <h1
-                style={{ textShadow: 'none', fontSize: 72 }}
+                style={{ textShadow: 'none', fontSize: 50 }}
                 className={color}
               >
                 {type.name}

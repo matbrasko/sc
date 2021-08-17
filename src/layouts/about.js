@@ -1,5 +1,6 @@
 import React from 'react';
 import events from '../events.json';
+import MetaTags from '../components/metaTags';
 
 const Home = () => {
   const eventsWithQuotes = events.filter((event) => 'quotes' in event);
@@ -9,6 +10,11 @@ const Home = () => {
   );
   return (
     <>
+      <MetaTags
+        name='About'
+        description='Sweet City is a project that runs from August to the local election
+            in November 2021.'
+      />
       <section className='bg-black evtypes'>
         <div className='container-wide center'>
           <div className='flex'>
