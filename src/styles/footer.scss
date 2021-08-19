@@ -13,6 +13,8 @@ footer {
   .imagelink {
     width: calc(32% - 24px);
     padding: 12px;
+    max-width: 80px;
+
     &.medium {
       width: calc(36% - 24px);
     }
@@ -22,6 +24,14 @@ footer {
   }
   img {
     object-fit: contain;
+  }
+  .container.flex {
+    @media (max-width: 860px) {
+      flex-direction: column;
+    }
+  }
+  a {
+    text-decoration: underline;
   }
 }
 

@@ -17,6 +17,7 @@ const Home = () => {
   eventsWithQuotes.map(
     (event) => (allquotes = [...allquotes, ...event.quotes])
   );
+  console.log(allquotes);
   return (
     <>
       <MetaTags
@@ -81,7 +82,7 @@ const Home = () => {
       </section>
 
       <Timeline events={events} color='white' />
-      <Quotes quotations={allquotes} maxSlides={3} />
+      {allquotes.length > 0 && <Quotes quotations={allquotes} maxSlides={3} />}
     </>
   );
 };

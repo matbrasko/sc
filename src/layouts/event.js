@@ -10,6 +10,7 @@ import Event from '../components/event';
 import MetaTags from '../components/metaTags';
 
 import { slugify } from '../utils/slugify';
+import { getCurrentDate } from '../utils/date';
 
 const EventLayout = ({ match }) => {
   let title = match.params.name;
@@ -25,6 +26,12 @@ const EventLayout = ({ match }) => {
   const color2 = type.color2;
 
   const [eventText, setEventText] = useState('');
+
+  var upcoming = [];
+
+  events.map((event) =>
+    event.date > getCurrentDate() ? upcoming.push(event) : null
+  );
 
   useEffect(() => {
     import(`../events/${slug}.md`)
@@ -71,9 +78,11 @@ const EventLayout = ({ match }) => {
         <ReactMarkdown children={eventText} allowDangerousHtml={true} />
       </section>
 
-      {'quotes' in event ? <Quotes quotations={event.quotes} /> : null}
+      {'quotes' in event && <Quotes quotations={event.quotes} />}
 
-      <EventsInLine color='black' title='Upcoming events' events={events} />
+      {upcoming.length > 1 && (
+        <EventsInLine color='black' title='Upcoming events' events={upcoming} />
+      )}
       <EventsInLine
         color={color2}
         title={`other ${eventType}`}

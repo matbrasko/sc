@@ -71,15 +71,13 @@ const Footer = () => {
             <a href='https://www.tuborgfondet.dk' target='_blank'>
               <Image path='/logos/tf.png' nameClass='imagelink large' />
             </a>
+            <h4>
+              SWEET CITY, 2021 | illustration and code by{' '}
+              <a href='http://anetacamo.github.io'>Aneta Camo</a>
+            </h4>
           </div>
         </div>
       </footer>
-      <section className='bg-blue right' style={{ padding: 2 }}>
-        <h4 className='white' style={{ margin: 8 }}>
-          2021 | coded and illustrated by{' '}
-          <a href='http://anetacamo.github.io'>Aneta Camo</a>
-        </h4>
-      </section>
     </>
   );
 };
