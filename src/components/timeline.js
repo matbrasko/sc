@@ -10,6 +10,7 @@ const Timeline = ({ events }) => {
   events.map((event) =>
     event.date > getCurrentDate() ? upcoming.push(event) : passed.push(event)
   );
+  console.log(getCurrentDate());
   if (upcoming.length % 2 !== 0) {
     reversed = true;
   }

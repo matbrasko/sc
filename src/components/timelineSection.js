@@ -11,9 +11,9 @@ const TimelineSection = ({ events, color, title, reversed }) => {
     [odd, even] = [even, odd];
   }
   return (
-    <section class={`center bg-${color} timeline`}>
-      <div class='container-wide center flex box-container'>
-        <div class='flex timeline-container' style={{ marginTop: -80 }}>
+    <section className={`center bg-${color} timeline`}>
+      <div className='container-wide center flex box-container'>
+        <div className='flex timeline-container' style={{ marginTop: -80 }}>
           {odd.map((event, index) => (
             <TimelineEvent
               key={index}

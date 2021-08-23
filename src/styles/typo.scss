@@ -31,6 +31,12 @@ li {
   letter-spacing: 1px;
   font-weight: 400;
   /*background: repeating-linear-gradient(0deg, #f3f3f3, white 4px);*/
+  @media (max-width: 800px) {
+    font-size: 16px;
+  }
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 }
 
 em {
@@ -51,6 +57,9 @@ table {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: 600px) {
+    margin: 16px 0;
+  }
 }
 
 .uppercase {
@@ -85,6 +94,12 @@ h1 {
   letter-spacing: 4px;
   text-transform: uppercase;
   text-shadow: 6px 6px var(--blue);
+  @media (max-width: 800px) {
+    font-size: 72px;
+  }
+  @media (max-width: 400px) {
+    font-size: 48px;
+  }
 }
 
 h2 {
@@ -93,7 +108,12 @@ h2 {
   line-height: 1;
   letter-spacing: 4px;
   text-transform: uppercase;
-  /*text-shadow: 4px 4px var(--blue);*/
+  @media (max-width: 800px) {
+    font-size: 48px;
+  }
+  @media (max-width: 400px) {
+    font-size: 40px;
+  }
 }
 
 h3 {
@@ -101,6 +121,9 @@ h3 {
   line-height: 1.2;
   letter-spacing: 1px;
   font-weight: 800;
+  @media (max-width: 400px) {
+    font-size: 18px;
+  }
 }
 
 h4 {
@@ -126,19 +149,6 @@ h6 {
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 10px;
-}
-
-p {
-  font-size: 20px;
-  line-height: 1.4;
-  letter-spacing: 1px;
-  font-weight: 400;
-}
-footer p {
-  font-size: 20px;
-  line-height: 1.6;
-  letter-spacing: 1px;
-  font-weight: 400;
 }
 
 .stroked {

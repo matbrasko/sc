@@ -22,6 +22,10 @@ $colors: 'red', 'yellow', 'blue', 'lightgray', 'black', 'white';
   .shadow-#{$color} {
     text-shadow: 6px 6px var(--#{$color});
   }
+  .hover-#{$color}:hover {
+    color: var(--#{$color});
+    transition-duration: 350ms;
+  }
 }
 
 /*texts */

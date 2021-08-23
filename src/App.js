@@ -20,8 +20,13 @@ function App() {
       <Switch>
         <Route path='/' component={Home} exact />
         <Route path='/about' component={About} exact />
-        {eventTypes.map((type) => (
-          <Route path={`/${slugify(type.name)}`} component={Type} exact />
+        {eventTypes.map((type, index) => (
+          <Route
+            path={`/${slugify(type.name)}`}
+            component={Type}
+            exact
+            key={index}
+          />
         ))}
         <Route path='/:category/:name' component={EventLayout} />
       </Switch>

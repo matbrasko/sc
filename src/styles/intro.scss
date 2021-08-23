@@ -4,7 +4,7 @@
   background-position: center center;
   background-image: url(../images/scbg.png);
   .container {
-    z-index: 1;
+    z-index: 0;
     width: 360px;
     position: relative;
   }
@@ -16,6 +16,37 @@
   }
   .logo {
     max-width: 160px;
+  }
+  @media (max-width: 600px) {
+    .container {
+      padding: 24px;
+    }
+    h1 {
+      font-size: 74px;
+    }
+    .date {
+      left: -20px;
+      top: 32px;
+      font-size: 40px;
+      text-shadow: none;
+    }
+    .boom {
+      top: 130px;
+      left: 200px;
+    }
+  }
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 60px;
+    }
+    .date {
+      font-size: 32px;
+    }
+    .boom {
+      top: 96px;
+      left: 180px;
+      width: 120px;
+    }
   }
 }
 
@@ -30,11 +61,31 @@
 .vertical {
   -webkit-writing-mode: vertical-rl;
   position: absolute;
+}
+
+.time,
+.place {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  height: 100vh;
+  text-align: center;
+  z-index: 3;
+  @media (max-width: 920px) {
+    display: none;
+  }
+}
+.time {
+  left: 19px;
+}
+.place {
+  right: 19px;
+}
+.date {
   left: -80px;
   top: 16px;
   text-shadow: none;
 }
-
 .boom {
   left: 220px;
   max-width: 200px;

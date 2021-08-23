@@ -1,26 +1,23 @@
 .megamenu {
-  width: 100%;
   height: 100vh;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
   top: 0;
   left: 0;
-  position: absolute;
-  padding: 12px;
-  display: flex;
+
   box-sizing: border-box;
-  flex-wrap: wrap;
-  justify-content: center;
+
   transition-duration: 350ms;
-  z-index: 2;
-  background-color: black;
+
   //background-image: url(../images/bg.png);
-  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position: fixed;
-  overflow: hidden;
+
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  // align-items: center;
 }
 .megamenu.gone {
   top: -100vh;
@@ -28,30 +25,28 @@
 }
 .megamenu .close {
   position: absolute;
-  top: 24px;
-  right: 0;
+
   width: 40px;
   height: 40px;
+
+  top: 24px;
   right: 24px;
   cursor: pointer;
 }
 
 .megamenu a {
   display: block;
-  // width: calc(50% - 24px);
   box-sizing: border-box;
   border-radius: 16px;
-  //  padding: 40px;
   margin: 12px;
   margin-top: -8px;
-  // background-color: white;
-  color: black;
   color: var(--red);
-  // text-align: center;
-  // max-width: 50%;
   min-width: 140px;
-  max-width: 320px;
-  text-decoration: none;
+  max-width: 360px;
+  padding: 0px 40px;
+  @media (max-width: 900px) {
+    padding: 8px;
+  }
 }
 
 .megamenu a p {
@@ -65,11 +60,7 @@
   color: white;
   transition-duration: 350ms;
 }
-@media (max-width: 1000px) {
-  .megamenu a {
-    padding: 24px;
-  }
-}
+
 @media (max-width: 600px) {
   .megamenu a {
     padding: 12px;
@@ -114,53 +105,26 @@
   }
 }
 
+.megamenu a:nth-of-type(1),
+.megamenu a:nth-of-type(3) {
+  h2 {
+    margin-left: 0;
+  }
+}
+
 .megamenu a:nth-of-type(2),
 .megamenu a:nth-of-type(4) {
   align-self: flex-end;
-}
-
-/* classes for the menu animation */
-.hamburger {
-  @media (min-width: 1000px) {
-    display: none;
-  }
-}
-.hamburger-menu {
-  padding-top: 6px;
-  cursor: pointer;
-  margin-left: auto;
-  width: 36px;
-  position: relative;
-  z-index: 5;
-  .icon-bar {
-    width: 40px;
-    height: 7px;
-    margin-bottom: 4px;
-    position: relative;
-    transition: 350ms ease;
-    background-image: url(../images/line.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  text-align: right;
+  h2 {
+    margin-right: 0;
   }
 }
 
-.bar-01 {
-  @extend .filter-blue;
-  &.opened {
-    transform: rotate(45deg);
-    top: 10px;
-  }
-}
-.bar-02 {
-  @extend .filter-red;
-  &.opened {
-    display: none;
-  }
-}
-.bar-03 {
-  @extend .filter-yellow;
-  &.opened {
-    transform: rotate(-45deg);
-    @extend .filter-blue;
-  }
+/* big letters*/
+
+.megamenu h2 span {
+  width: 44px;
+  display: inline-block;
+  text-align: center;
 }

@@ -1,11 +1,7 @@
 footer {
-  .fa {
-    height: 30px;
-    margin-right: 12px;
-    font-size: 24px !important;
-  }
   p {
     font-size: 16px;
+    line-height: 1.6;
   }
   h4 {
     color: var(--blue);
@@ -14,7 +10,6 @@ footer {
     width: calc(32% - 24px);
     padding: 12px;
     max-width: 80px;
-
     &.medium {
       width: calc(36% - 24px);
     }
@@ -28,6 +23,8 @@ footer {
   .container.flex {
     @media (max-width: 860px) {
       flex-direction: column;
+      max-width: 400px;
+      margin-left: 0;
     }
   }
   a {

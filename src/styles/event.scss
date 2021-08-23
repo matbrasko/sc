@@ -8,9 +8,13 @@
     transition-duration: 350ms;
     background-position: center;
     background-size: cover;
-
     img {
       object-fit: contain;
+    }
+  }
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 32px !important;
     }
   }
   .text {
@@ -25,30 +29,17 @@
     }
     button {
       margin-top: 16px;
+      @media (max-width: 800px) {
+        display: none;
+      }
     }
-  }
-}
-
-.type-event {
-  width: 420px;
-  height: 420px;
-  .text {
-    width: 420px;
-  }
-}
-
-.timeline-event {
-  width: 360px;
-  height: 600px;
-  .text {
-    width: 320px;
   }
 }
 
 .carousel-event {
   min-width: 320px;
   max-width: 400px;
-  height: 240px;
+  height: 280px;
   margin: 24px;
   .text {
     width: 300px;

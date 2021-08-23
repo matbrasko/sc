@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from './image';
+import Go from './go';
 
 const Footer = () => {
   return (
@@ -32,48 +33,36 @@ const Footer = () => {
           <div>
             <h4>
               Sweet City is developed and run by the Aarhusian youth cultural
-              platforms <a href='https://www.frontloberne.dk/'>Frontløberne</a>{' '}
-              x{' '}
-              <a href='https://ungdomskulturhuset.com/en-gb/home-en/'>
+              platforms <Go to='https://www.frontloberne.dk/'>Frontloberne</Go>{' '}
+              & <Go to='https://institutforx.dk/'>Institut for X</Go> &{' '}
+              <Go to='https://ungdomskulturhuset.com/en-gb/home-en/'>
                 Ungdomskulturhuset - UKH
-              </a>{' '}
-              x{' '}
-              <a href='https://institutforx.dk/' target='_blank'>
-                Institut for X
-              </a>
+              </Go>
             </h4>
             <div className='flex' style={{ alignItems: 'center' }}>
-              <a
-                href='https://www.frontloberne.dk/'
-                target='_blank'
-                className='imagelink large'
-              >
-                <Image path='/logos/fl.png' nameClass='inverted' />
-              </a>
-              <a
-                href='https://institutforx.dk/'
-                target='_blank'
-                className='imagelink medium'
-              >
+              <Go to='https://www.frontloberne.dk/' nameClass='imagelink large'>
+                <Image path='/logos/fl.png' nameClass='inverted large' />
+              </Go>
+              <Go to='https://institutforx.dk/' nameClass='imagelink medium'>
                 <Image path='/logos/x.png' nameClass='inverted' />
-              </a>
-              <a
-                href='https://ungdomskulturhuset.com/en-gb/home-en/'
-                target='_blank'
-                className='imagelink medium'
+              </Go>
+              <Go
+                to='https://ungdomskulturhuset.com/en-gb/home-en/'
+                nameClass='imagelink medium'
               >
                 <Image path='/logos/ukh.jpeg' />
-              </a>
+              </Go>
             </div>
             <h4>
-              supported by <a>Tuborgfondet</a>
+              supported by{' '}
+              <Go to='https://www.tuborgfondet.dk'>Tuborgfondet</Go>
             </h4>
-            <a href='https://www.tuborgfondet.dk' target='_blank'>
+            <Go to='https://www.tuborgfondet.dk'>
               <Image path='/logos/tf.png' nameClass='imagelink large' />
-            </a>
+            </Go>
             <h4>
               SWEET CITY, 2021 | illustration and code by{' '}
-              <a href='http://anetacamo.github.io'>Aneta Camo</a>
+              <Go to='http://anetacamo.github.io'>Aneta Camo</Go>
             </h4>
           </div>
         </div>

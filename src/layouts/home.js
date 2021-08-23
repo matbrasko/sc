@@ -17,25 +17,26 @@ const Home = () => {
   eventsWithQuotes.map(
     (event) => (allquotes = [...allquotes, ...event.quotes])
   );
-  console.log(allquotes);
   return (
     <>
-      <MetaTags
-        name='Home'
-        description='Sweet City is a project that runs from August to the local election
-            in November 2021.'
-      />
+      <MetaTags name='Home' description='Half a year of youthful politics' />
       <section className='full bg-black flex intro'>
+        <h4 className='vertical time'>
+          june to november <span className='red'>2021</span>
+        </h4>
+        <h4 className='vertical place'>
+          <span className='red'>Aarhus</span>
+        </h4>
         <div className='intro-bg'></div>
         <div className='container'>
-          <h2 className='blue vertical'>11.8.</h2>
+          <h2 className='blue vertical date'>21.6. - 16.11.</h2>
           <h1>Sweet City 2021</h1>
-          <p>Only by engaging, you can make a change!</p>
+          <p>Half a year of youthful politics in Aarhus</p>
 
-          <Image path='/sweetcity_logo.png' nameClass='logo' />
+          <Image path='/logo.png' nameClass='logo' />
           <div className='boom'>
-            <Image path='/boom.png' />
-            <h3>mm so yummy!</h3>
+            <Image path='/boom.png' nameClass='filter-red' />
+            <h3>Change your city!</h3>
           </div>
         </div>
       </section>
@@ -73,6 +74,7 @@ const Home = () => {
           {eventTypes.map((type, index) => (
             <EventTypes
               type={type}
+              key={index}
               description={type.short}
               isEven={index % 2 === 0}
               color='black'

@@ -5,7 +5,9 @@
     "short": "we encourage politicians to interact with the living youth cultural scene of Aarhus through handpicked youth cultural events.",
     "color": "red",
     "color2": "lightgray",
-    "colorHover": "blue"
+    "colorHover": "blue",
+    "shortName": "Cultu  ral Ev ents",
+    "letterNum": 5
   },
   {
     "name": "Political Meetings",
@@ -13,7 +15,9 @@
     "short": "In new, creative variations of the classic electoral meeting, we want to stage the political meetings that puts the spotlight on the youth.",
     "color": "yellow",
     "color2": "red",
-    "colorHover": "white"
+    "colorHover": "white",
+    "shortName": "Poli  tical M eetings",
+    "letterNum": 6
   },
   {
     "name": "Podcasts",
@@ -21,14 +25,18 @@
     "short": "In this series, we aim to create intimate conversations about urgent topics in the world of young Aarhusians. One to one; youth to politician.",
     "color": "lightgray",
     "color2": "blue",
-    "colorHover": "yellow"
+    "colorHover": "yellow",
+    "shortName": "P od casts",
+    "letterNum": 4
   },
   {
-    "name": "Policy Lab",
+    "name": "Policy Labs",
     "description": "Through participatory lab sessions, we explore different sorts democratic action that by-passes electoral politics - be it positive activism, artistic practices or city development. Together with experts and inspirators, we examine how we can change the world ourselve",
     "short": "Through participatory lab sessions, we explore different sorts democratic action that by-passes electoral politics",
     "color": "blue",
     "color2": "yellow",
-    "colorHover": "red"
+    "colorHover": "red",
+    "shortName": "Pol icy Labs",
+    "letterNum": 3
   }
 ]

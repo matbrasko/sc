@@ -50,6 +50,13 @@ const EventLayout = ({ match }) => {
     <>
       <MetaTags name={event.name} description={event.description} />
       <section className='bg-black evtypes'>
+        <h4 className='vertical time black'>
+          {event.name}
+          <span className={type.color}> {event.date}</span>
+        </h4>
+        <h4 className='vertical place black'>
+          <span className={type.color}>{event.location}</span>
+        </h4>
         <div className='container-wide center'>
           <div className='flex'>
             <div className='left'>
@@ -63,7 +70,6 @@ const EventLayout = ({ match }) => {
                   {event.name}
                 </h1>
               )}
-
               <h1 dangerouslySetInnerHTML={{ __html: event.codename }}></h1>
               <p>{event.description}</p>
             </div>
@@ -72,11 +78,16 @@ const EventLayout = ({ match }) => {
         </div>
       </section>
       <section>
-        <h2 className='blue' style={{ textShadow: '5px 5px black' }}>
-          About the event
-        </h2>
+        <h4>About the event</h4>
         <ReactMarkdown children={eventText} allowDangerousHtml={true} />
       </section>
+
+      {'gallery' in event && (
+        <section>
+          <h4>Gallery</h4>
+          <img src='/images/events/01.png' />
+        </section>
+      )}
 
       {'quotes' in event && <Quotes quotations={event.quotes} />}
 

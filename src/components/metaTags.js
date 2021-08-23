@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { slugify } from '../utils/slugify';
 
-const MetaTags = ({ name, description }) => {
+const MetaTags = ({ name, description, image }) => {
   return (
     <Helmet>
       <meta charSet='utf-8' />
@@ -18,7 +18,10 @@ const MetaTags = ({ name, description }) => {
       <meta property='og:title' content={`${name} | SweetCity2021`} />
       <meta property='og:description' content={description} />
       <meta property='og:locale' content='da_DK' />
-      <meta property='og:image' content='../images/sweetcity_logo.png' />
+      <meta
+        property='og:image'
+        content={image ? image : '../images/sweetcity_logo.png'}
+      />
       <meta name='twitter:card' content='summary' />
       <meta name='twitter:site' content='@anetacamo' />
       <meta name='twitter:creator' content='@anetacamo' />

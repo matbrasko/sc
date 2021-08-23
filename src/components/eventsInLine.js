@@ -10,6 +10,7 @@ const EventsInLine = ({ color, title, events }) => {
           (event, index) =>
             index < 3 && (
               <TimelineEvent
+                key={index}
                 event={event}
                 color={color}
                 nameClass='carousel-event'

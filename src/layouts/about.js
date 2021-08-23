@@ -1,6 +1,7 @@
 import React from 'react';
 import events from '../events.json';
 import MetaTags from '../components/metaTags';
+import Image from '../components/image';
 
 const Home = () => {
   const eventsWithQuotes = events.filter((event) => 'quotes' in event);
@@ -19,10 +20,7 @@ const Home = () => {
         <div className='container-wide center'>
           <div className='flex'>
             <div>
-              <img
-                src='/../images/sweetcity_logo.png'
-                style={{ maxWidth: 320 }}
-              />
+              <Image path='/sweetcity_logo.png' nameClass='about-logo' />
             </div>
             <div className='right'>
               <h1>About this project</h1>

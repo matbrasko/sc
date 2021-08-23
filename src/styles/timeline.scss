@@ -127,3 +127,21 @@
     background-color: var(--blue);
   }
 }
+
+.timeline-event {
+  width: 360px;
+  height: 600px;
+  .text {
+    width: 320px;
+    @media (max-width: 800px) {
+      width: 280px;
+    }
+  }
+  button {
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+  @media (max-width: 600px) {
+  }
+}

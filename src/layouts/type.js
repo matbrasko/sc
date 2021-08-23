@@ -15,7 +15,11 @@ const Type = ({ match }) => {
   const color = 'black';
   return (
     <>
-      <MetaTags name={type.name} description={type.description} />
+      <MetaTags
+        name={type.name}
+        description={type.description}
+        image={`/images/fb/${slugify(type.name)}`}
+      />
       <section className='bg-black evtypes'>
         <div className='container-wide center'>
           <div className='flex'>
@@ -40,7 +44,15 @@ const Type = ({ match }) => {
           </div>
         </div>
       </section>
-      {types.length > 0 && <Timeline events={types} />}
+      {types.length > 0 ? (
+        <Timeline events={types} />
+      ) : (
+        <section>
+          <p>
+            No upcoming events at the moment. <br /> Stay tuned for more
+          </p>
+        </section>
+      )}
     </>
   );
 };
