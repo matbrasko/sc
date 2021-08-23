@@ -10,7 +10,15 @@
   {
     "date": "2021-08-11",
     "location": "Frontløberne",
-    "name": "Flukhx",
+    "name": "Flukhx Meeting",
+    "codename": "Fl<span class='red'>ukh</span><span class='blue'>x</span>",
+    "type": "Cultural Events",
+    "description": "8 HOURS OF LIVING CULTURE"
+  },
+  {
+    "date": "2021-08-11",
+    "location": "Frontløberne",
+    "name": "Flukhx Meshup",
     "codename": "Fl<span class='red'>ukh</span><span class='blue'>x</span>",
     "type": "Cultural Events",
     "description": "8 HOURS OF LIVING CULTURE"
