@@ -48,9 +48,11 @@ const Type = ({ match }) => {
         <Timeline events={types} />
       ) : (
         <section>
-          <p>
-            No upcoming events at the moment. <br /> Stay tuned for more
-          </p>
+          <div className='container'>
+            <p>
+              No upcoming events at the moment. <br /> Stay tuned for more
+            </p>
+          </div>
         </section>
       )}
     </>

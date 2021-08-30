@@ -1,0 +1,11 @@
+.gallery {
+  align-items: center;
+  flex-wrap: wrap;
+  img {
+    min-width: 180px;
+    max-width: 320px;
+    margin: 16px;
+    background-size: cover;
+    flex: 1;
+  }
+}

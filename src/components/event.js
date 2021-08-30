@@ -4,8 +4,7 @@ import Image from '../components/image';
 import { slugify } from '../utils/slugify';
 
 const Event = ({ nameClass, color, type, children, slug }) => {
-  const staticPath = '/sc';
-  const image = `url(/..${staticPath}/images/events/${slug}.jpg)`;
+  const image = `url(/images/events/${slug}.jpg)`;
   const [hovered, setHovered] = useState(false);
   return (
     <div

@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2021-08-11",
+    "location": "Frontløberne",
+    "name": "Flukhx Meshup",
+    "codename": "Fl<span class='red'>ukh</span><span class='blue'>x</span>",
+    "type": "Cultural Events",
+    "description": "8 hours of living culture"
+  },
+  {
+    "date": "2021-08-11",
+    "location": "Frontløberne",
+    "name": "Flukhx Meeting",
+    "codename": "Fl<span class='red'>ukh</span><span class='blue'>x</span>",
+    "type": "Policy Labs",
+    "description": "8 hours of living culture"
+  },
+  {
+    "name": "Public hearings and city development",
+    "date": "2021-06-21",
+    "location": "UKH",
+    "type": "Policy Labs",
+    "description": "Aarhus Kommune is at the moment developing several areas of the city - e.g. Aarhus Ø, Aarhus K, Sydhavnen, not to mention Amtssygehuset",
+    "gallery": "7"
+  }
+]

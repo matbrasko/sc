@@ -20,6 +20,7 @@ const Quotes = ({ quotations, maxSlides }) => {
       }, 3000);
     }, 3000);
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentQuoteNumber]);
 
   const handleArrowClick = () => {
