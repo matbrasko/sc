@@ -1,8 +1,8 @@
 ---
 date: 2021-08-11
 location: Frontløberne
-name: Flukhx Meshup
-codename: Fl<span class='red'>ukh</span><span class='blue'>x</span>
+name: FLUKHX Meshup
+codename: FL<span class='red'>UKH</span><span class='blue'>X</span>
 type: Cultural Events
 description: 8 hours of living culture
 ---
